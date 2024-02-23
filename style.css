@@ -3,7 +3,7 @@ body, html{
     margin: 0px;
 }
 div.top{
-    background-color: rgb(31, 0, 59);
+    background-color: rgb(17, 1, 31);
     width: 100%;
     height: 65%;
     display: flex;
@@ -11,23 +11,29 @@ div.top{
     justify-content: center;
 }
 .top .innertop{
-
     width: 65%;
     height: 60%;
-
 }
 .top .innertop .blur{
     background-color: rgba(8, 42, 105, 0.479);
-    width: 100%;
-    height: 100%;
+    width: 65%;
+    height: 40%;
     filter: blur(10px);
+    position: absolute;
 }
-.top .innertop h1{
+.top .innertop .text{
+    width: 65%;
+    height: 40%;
+    position: absolute;
+}
+.top .innertop .text h1{
     color: rgba(151, 206, 255, 0.801);
     filter: brightness(120%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Satisfy", cursive;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 350%;
+    position:
 }
 div.middle{
     background-color: black;
@@ -35,7 +41,7 @@ div.middle{
     height: 80%;
 }
 div.bottem{
-    background-color: rgb(0, 23, 100);
+    background-color: rgb(17, 1, 31);
     width: 100%;
     height: 30%;
 }
