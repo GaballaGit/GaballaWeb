@@ -7,7 +7,7 @@ Language Used:<br /><br />
 -CSS<br /><br />
 -JavaScript
 --------------------------------------------
-#References Used:
-https://www.w3schools.com/ 
-https://css-tricks.com/ 
+References Used:<br /><br />
+https://www.w3schools.com/ <br /><br />
+https://css-tricks.com/ <br /><br />
 https://www.tutorialspoint.com/How-to-hide-HTML-element-with-JavaScript 
