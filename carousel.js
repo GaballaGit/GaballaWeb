@@ -1,4 +1,4 @@
-// Function to be called after DOM content is loaded
+// Function to be called after DOM content (basically all HTML) is loaded 
 document.addEventListener('DOMContentLoaded', function() {
     let slides = document.querySelectorAll('.slide');
     let currentIndex = 0;
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentIndex < slides.length - 1) {
             goToSlide(currentIndex + 1);
         } else {
-            goToSlide(0); // Wrap around to the first slide
+            goToSlide(0);
         }
     }
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentIndex > 0) {
             goToSlide(currentIndex - 1);
         } else {
-            goToSlide(slides.length - 1); // Wrap around to the last slide
+            goToSlide(slides.length - 1);
         }
     }
     
