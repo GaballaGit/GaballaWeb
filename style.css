@@ -5,26 +5,92 @@ body, html{
 div.top{
     background-color: rgb(17, 1, 31);
     width: 100%;
-    height: 65%;
+    height: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+nav.navigationBar{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 10%;
+    background-size: 180% 180%;
+    display: flex;
+    position: fixed;
+    background-color: #000000;
+}
+div.navBarFrame{
+    width: 100%;
+    height: 11%;
+    z-index: 100;
+    background-color: #020074;
+    position: fixed;
+    border-color: #000000;
+    border-width: thick;
+    
+}
+.navigationBar .behind{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(45deg,#140035 0.1%, #71d9ffab 60%, #ffd001 100%);
+    animation:gradient-animation 20s ease-in-out infinite;
+    z-index: 1;
+}
+.navigationBar .blur{
+    position: absolute;
+    background-color: #021649;
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+    z-index: 2;
+}
+@keyframes gradient-animation{
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.navigationBar .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.navigationBar .text h1{
+    color: rgba(151, 206, 255, 0.801);
+    filter: brightness(120%);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 180%;
+    margin-left: 10rem;
+}
 .top .innertop{
-    width: 65%;
+    width: 100%;
     height: 60%;
 }
 .top .innertop .blur{
-    background-color: rgba(8, 42, 105, 0.479);
-    width: 65%;
+    background: rgb(184,153,255);
+    background: radial-gradient(circle, rgba(9,70,121,1) 0%, rgba(9,70,121,1) 22%, rgba(17, 1, 31) 90%);
+    width: 100%;
     height: 40%;
     filter: blur(10px);
     position: absolute;
 }
 .top .innertop .text{
-    width: 65%;
+    width: 100%;
     height: 40%;
     position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 .top .innertop .text h1{
     color: rgba(151, 206, 255, 0.801);
@@ -33,7 +99,11 @@ div.top{
     font-style: italic;
     font-weight: 400;
     font-size: 350%;
-    position:
+    text-align: center;
+}
+.top .innertop .text p{
+    color: rgb(152, 207, 255);
+    text-align: center;
 }
 div.middle{
     background-color: black;
@@ -41,7 +111,34 @@ div.middle{
     height: 80%;
 }
 div.bottem{
+    display: flex;
     background-color: rgb(17, 1, 31);
     width: 100%;
     height: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center
+}
+.bottem .contactText h1{
+    color: rgb(151, 206, 255, 0.801);
+    font-size: small;
+}
+.fa:hover{
+    opacity: 50%;
+}
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.bottem .fa-github{
+    background: rgb(17, 1, 31);
+    color: rgb(4, 21, 68);
+}
+.bottem .fa-linkedin{
+    background: rgb(17, 1, 31);
+    color: rgb(4, 21, 68);
 }
