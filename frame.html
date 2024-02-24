@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="carousel.js"></script>
+
+
     <title>
         Gaballa Web
     </title>
 </head>
 <body>
+
     <nav class="navigationBar">
         <div class="blur"></div>
         <div class="behind"></div>
@@ -25,14 +32,51 @@
             
             <div class = "text">
                 <h1>Welcome to my page!</h1>
-                <p>Hello, my name is Mark Gaballa, I am a computer science student at California State University, Fullerton!</p>
+                <p>
+                    Hello, I am a computer science student at California State University, Fullerton! <br />
+                    I am interested in Game Development and am looking for more experience with Web Development.
+                </p>
             </div>
         </div>
     </div>
     <div class="middle">
-        <div class ="carousel"></div>
+        <div class ="carousel">
+            <button class="prevB">Previous</button>
+            <button class="nextB">Next</button>
+                <div class="slide">
+                    <h1>Programming Languages</h1>
+                    <p>-C++ <br /><br />
+                       -Python <br /><br />
+                       -Lua    
+                    </p>
+                </div>
+                <div class="slide">
+                    <h1>C++ Projects:</h1>
+                    <h2>Project Hurdle</h2>
+                    <p>
+                        • A project for my Object Oriented Programming class, a clone of the popular word game, "Wordle."<br /><br / >
+                        • Implemented many classes and functions in C++ to demonstrate my knowledge of OOP<br /><br />
+                        • Player is given 5 guess just like in wordle, when a guess is given to the program, it will give the player color feedback on 
+                        how many letters are correct, and in the same position, how many letters are correct but not in the correct position, and 
+                        how many letters are wrong. Just like the real Wordle.<br /><br />
+                        <a href="https://github.com/CSUF-CPSC121L-2023S/hurdle-backend-MKGaballa">Project</a>
+                </div>
+                <div class="slide">
+                    <h1>Python Projects:</h1>
+                    <h2>Music Producer Simulator</h2>
+                    <p>• A simulator I created for my AP Computer Science A project submission<br /> <br />
+                        • Made in python, this program would ask for the player to input a name of a song they want to produce and how long their 
+                        song has been out for, then the program runs a random number generator that determines how many listens your song got 
+                        over its life span<br /><br />
+                        • The program kept asking the user for songs to generate until the user would quit the program itself. Before the user quits 
+                        the program, they got the option to view all their songs in a sorted order of by name, by oldest to newest song, and by how 
+                        popular a song is<br /> <br />
+                        <a href="https://replit.com/@Gaballa/Create-Task">Project</a>
+                    </p>
+                </div>
+        </div>
     </div>
-    <div class="bottem">
+    <div class="bottom">
         <a href="https://github.com/GaballaGit" class="fa fa-github"></a>
         <div class="contactText">
             <h1>Email: lgaballal@yahoo.com</h1>

@@ -10,6 +10,11 @@ div.top{
     align-items: center;
     justify-content: center;
 }
+
+/*
+    "NAVIGATION BAR"
+                    */
+
 nav.navigationBar{
     overflow: hidden;
     top: 0;
@@ -26,7 +31,7 @@ div.navBarFrame{
     width: 100%;
     height: 11%;
     z-index: 100;
-    background-color: #020074;
+    background-color: #010044;
     position: fixed;
     border-color: #000000;
     border-width: thick;
@@ -36,7 +41,7 @@ div.navBarFrame{
     position: absolute;
     width: 200%;
     height: 100%;
-    background: linear-gradient(45deg,#140035 0.1%, #71d9ffab 60%, #ffd001 100%);
+    background: linear-gradient(75deg,#140035 0.1%, #71d9ffab 80%, #01ff4d8f 100%);
     animation:gradient-animation 20s ease-in-out infinite;
     z-index: 1;
 }
@@ -73,6 +78,11 @@ div.navBarFrame{
     font-size: 200%;
     margin-left: 10rem;
 }
+
+/*
+    TOP
+        */
+
 .top .innertop{
     width: 100%;
     height: 60%;
@@ -105,12 +115,65 @@ div.navBarFrame{
     color: rgb(152, 207, 255);
     text-align: center;
 }
+
+/*
+    Middle and Carousel
+                        */
+
 div.middle{
     background-color: black;
     width: 100%;
-    height: 80%;
+    height: 50%;
 }
-div.bottem{
+.middle .carousel{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: absolute;
+}
+.carousel .slide{
+    margin-left: auto;
+    margin-right: auto;
+    position:static;
+    width: 90%;
+    height: 50%;
+}
+.carousel .slide h1, h2, p{
+    color: aliceblue;
+    text-align: center;
+    vertical-align:text-bottom;
+
+}
+.carousel .slide p{
+    font-size: large;
+    vertical-align:sub;
+}
+.prevB, .nextB {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+.prevB:hover, .nextB:hover {
+    background-color: #555;
+}
+.prevB{
+    left: 10px;
+}
+.nextB{
+    right: 10px;
+}
+/*
+    Bottom and socials
+                        */
+
+div.bottom{
     display: flex;
     background-color: rgb(17, 1, 31);
     width: 100%;
@@ -119,7 +182,7 @@ div.bottem{
     justify-content: center;
     align-items:center
 }
-.bottem .contactText h1{
+.bottom .contactText h1{
     color: rgb(151, 206, 255, 0.801);
     font-size: small;
 }
