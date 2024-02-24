@@ -2,9 +2,9 @@
 ## CWID: 885762294
 ## Email: mgaballa@csu.fullerton.edu
 --------------------------------------------
-#Language Used:
--HTML
--CSS
+Language Used:<br />
+-HTML<br />
+-CSS<br />
 -JavaScript
 --------------------------------------------
 #References Used:
