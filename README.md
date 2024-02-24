@@ -3,9 +3,9 @@
 ## Email: mgaballa@csu.fullerton.edu
 --------------------------------------------
 #Language Used:
-###-HTML
-###-CSS
-###-JavaScript
+-HTML
+-CSS
+-JavaScript
 --------------------------------------------
 #References Used:
 https://www.w3schools.com/ 
